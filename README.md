@@ -31,9 +31,6 @@ Whenever a new node joins, we will first calculate its position on the Chord Cir
 
 
 ## Instructions to run the simulation
-We have provided the F# sources code as well as standalone executables for windows, linux and mac. Use visual studio IDE and import the ChordSimulator.fsproj file to read the source code.
-
-To run the simulation, navigate to the standalone_executable/{your_local_os} and execute the following command in CMD or terminal.
 
  * ChordSimulator 1000 100
 
@@ -43,20 +40,18 @@ Command line params:
  3. lookupAlgorithm - simple/scalable. This is a optional parameter. By default the lookup algorithm will be scalable.
 
 ## Output
-We have run our simulation with identifier space size of 32768 (2<sup>15</sup>), 1000 nodes and 100 requests per node. Additionally, we will join 10 new nodes with each node joining with 10 seconds interval. We have run the simulation for both Simple key lookup and the Scalabale key lookup and following are the output.
-1. Simple Key lookup - It took 3.44 minutes for 1010 nodes to perfrom 100 requests per node with 250 avaerage hops per node.
+1. Simple Key lookup - 1010 Nodes 100 requests
 
      ```
-     All actors are done with processing the requests.
-     Time taken to process all the requests is 206896ms and average hops 249.974802
+     Each actors are done with processing the requests.
+     Time elapsed to process the requests is 205503ms and average hops 248.96508
      ```
     
-2. Scalable key lookup - It took 3.3 minutes for 1010 nodes to perform 100 requetes per node with 5 average hops per node.
+2. Scalable key lookup - 1010 Nodes 100 requests
 
      ```
      All actors are done with processing the requests.
-     Time taken to process all the requests is 203894ms and average hops 5.025238
+     Time taken to process all the requests is 212503ms and average hops 5.730000
      ```
      
-The complete output of the simulation can be fround in the logs directory.
 
